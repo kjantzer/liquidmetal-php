@@ -1,6 +1,7 @@
 # LiquidMetal
 
-**This is a PHP port of `http://github.com/rmm5t/liquidmetal`:**  
+**This is a PHP port of [rmm5t/liquidmetal](http://github.com/rmm5t/liquidmetal):**
+
 “A mimetic poly-alloy of the Quicksilver scoring algorithm, essentially
 LiquidMetal. `</Schwarzenegger Voice>`”
 
