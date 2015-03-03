@@ -123,7 +123,7 @@ class LiquidMetal {
 
   private static function is_new_word($string, $index) {
     $c = $string{$index-1};
-    return $c && (strpos(self::$WORD_SEPARATORS, $c) != -1);
+    return $c && (strpos(self::$WORD_SEPARATORS, $c) !== false);
   }
 
   private static function fill_array(&$array, $value, $from, $to) {
