@@ -7,16 +7,16 @@ LiquidMetal. `</Schwarzenegger Voice>`”
 
 ## Usage
 
-Include the library:
+If not using Composer's autoloader, include the library:
 
     include 'LiquidMetal.php';
 
 Score any string against an abbreviation:
 
-    Liquid_Metal::score("FooBar",  "foo")   //=> 0.950
-    Liquid_Metal::score("FooBar",  "fb")    //=> 0.917
-    Liquid_Metal::score("Foo Bar", "fb")    //=> 0.929
-    Liquid_Metal::score("Foo Bar", "baz")   //=> 0.0
-    Liquid_Metal::score("Foo Bar", "")      //=> 0.8
+    LiquidMetal::score("FooBar",  "foo");   //=> 0.950
+    LiquidMetal::score("FooBar",  "fb");    //=> 0.917
+    LiquidMetal::score("Foo Bar", "fb");    //=> 0.929
+    LiquidMetal::score("Foo Bar", "baz");   //=> 0.0
+    LiquidMetal::score("Foo Bar", "");      //=> 0.8
 
 All scores fall between a range of 0.0 (no match) to 1.0 (perfect match).
