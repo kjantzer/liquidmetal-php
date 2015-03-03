@@ -1,0 +1,22 @@
+{
+    "name": "kjantzer/liquidmetal-php",
+    "type": "library",
+    "description": "LiquidMetal is a PHP port of liquidmetal.js, a Quicksilver-inspiried scoring algorithm.",
+    "authors": [
+        {
+            "name": "Ryan McGeary",
+            "email": "ryan@mcgeary.org"
+        },
+        {
+            "name": "Kevin Jantzer",
+            "email": "Kevin@KevinJantzer.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "classmap": ["LiquidMetal.php"]
+    },
+    "license": "MIT"
+}
