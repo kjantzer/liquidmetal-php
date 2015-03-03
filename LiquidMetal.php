@@ -16,7 +16,7 @@
 */
 
 
-class Liquid_Metal {
+class LiquidMetal {
 
   private static $SCORE_NO_MATCH = 0.0;
   private static $SCORE_MATCH = 1.0;
