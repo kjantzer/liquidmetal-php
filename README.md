@@ -9,7 +9,7 @@ LiquidMetal. `</Schwarzenegger Voice>`”
 
 Include the library:
 
-    include 'Liquid_Metal.php';
+    include 'LiquidMetal.php';
 
 Score any string against an abbreviation:
 
