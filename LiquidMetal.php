@@ -122,7 +122,7 @@ class LiquidMetal
 
     private static function isNewWord($string, $index)
     {
-        $c = $string{$index - 1};
+        $c = $index == 0 ? $c = false : $string{$index - 1};
         return $c && (strpos(self::$WORD_SEPARATORS, $c) !== false);
     }
 
