@@ -75,7 +75,7 @@ class LiquidMetal
         // save completed match $scores at end of $search
         if ($abbrIndex == strlen($abbrev)) {
             // add trailing score for the remainder of the match
-            $started = ($search{0} == $abbrev{0});
+            $started = ($search[0] == $abbrev[0]);
             $trailScore = $started ? self::$SCORE_TRAILING_BUT_STARTED : self::$SCORE_TRAILING;
             self::fillArray($scores, $trailScore, count($scores), strlen($string));
             // save score clone (since reference is persisted in $scores)
@@ -84,7 +84,7 @@ class LiquidMetal
         }
 
         // consume current char to match
-        $c = $abbrev{$abbrIndex};
+        $c = $abbrev[$abbrIndex];
         $abbrIndex++;
 
         // cancel match if a character is missing
@@ -116,13 +116,13 @@ class LiquidMetal
 
     private static function isUpperCase($string, $index)
     {
-        $c = $string{$index};
+        $c = $string[$index];
         return ctype_upper($c);
     }
 
     private static function isNewWord($string, $index)
     {
-        $c = $index == 0 ? $c = false : $string{$index - 1};
+        $c = $index == 0 ? $c = false : $string[$index - 1];
         return $c && (strpos(self::$WORD_SEPARATORS, $c) !== false);
     }
 
